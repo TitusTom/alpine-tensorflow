@@ -1,7 +1,7 @@
-Alpine Tensorflow Python 2 (2.7) Version
+Alpine Tensorflow for Python 2 (2.7)
 -------------------------------------
 
-Modified version of https://github.com/better/alpine-tensorflow to produce a python 2.7 verion of tensorflow 1.7.0.
+Modified version of https://github.com/better/alpine-tensorflow to produce tensorflow 1.7.0 library for python 2 (2.7).  
 
 
 Tensorflow 1.7.0  - Python 2 (2.7) Wheel file
