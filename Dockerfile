@@ -32,6 +32,7 @@ RUN apk add --no-cache --virtual=.build-deps \
         sed \
         swig \
         zip \
+        libc6-compat \
     && cd /tmp \
     && pip install --no-cache-dir wheel 
 #     && $(cd /usr/bin && ln -s python python)
