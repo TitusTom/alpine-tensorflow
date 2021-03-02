@@ -8,7 +8,7 @@ FROM alpine:3.7
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV LOCAL_RESOURCES 2048,.5,1.0
-ENV BAZEL_VERSION 0.10.0
+ENV BAZEL_VERSION 0.24.1
 RUN apk add --no-cache python python2-tkinter py-numpy py-numpy-f2py freetype libpng libjpeg-turbo imagemagick graphviz git
 RUN apk add --no-cache --virtual=.build-deps \
         bash \
@@ -49,7 +49,7 @@ RUN cd bazel-${BAZEL_VERSION} \
     && cp -p output/bazel /usr/bin/
 
 # Download Tensorflow
-ENV TENSORFLOW_VERSION 1.7.0
+ENV TENSORFLOW_VERSION 1.14.0
 RUN cd /tmp \
     && curl -SL https://github.com/tensorflow/tensorflow/archive/v${TENSORFLOW_VERSION}.tar.gz \
         | tar xzf -
